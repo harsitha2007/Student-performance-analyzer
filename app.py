@@ -1,24 +1,40 @@
 import streamlit as st
-import pandas as pd 
-from sklearn.linear_model import
-LinearRegression
-st.set_page_config(page_title="Student Performance Analyzer",
-                   page_icon="Heart",
-                   layout="Wide"
-                  )
-st.title("Heart Student Perfomance Analyzer")
-st.caption("A BTS-Themed Data Science learning Project")
-st.info("This project Uses fictional practice data.")
-data = {"name":["JK","jimin","Namjoon","yoongi","jin","JHope"],"study_hours":[2,4,8,7,6,5],"attendance":[65,70,95,50,78,68],"marks":[55,64,80,88,69,67]}
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+st.set_page_config(
+    page_title="Student Performance Analyzer",
+    page_icon="💜",
+    layout="wide"
+)
+
+st.title("💜 Student Performance Analyzer")
+st.caption("A BTS-themed Data Science learning project")
+
+st.info("This project uses fictional practice data.")
+
+data = {
+    "name": ["JK", "Jimin", "Namjoon", "Yoongi", "Jin", "JHope"],
+    "study_hours": [2, 4, 8, 7, 6, 5],
+    "attendance": [65, 70, 95, 50, 78, 68],
+    "marks": [55, 64, 80, 88, 69, 67]
+}
+
 df = pd.DataFrame(data)
-col1,col2,col3 = st.column(3)
-col1.metric("Students",len(df))
-col2.metric("Average Marks",f"{df['Marks'].mean():.1f}")
-col3.metric("Average Study Hours",f"{df['study_hours'].mean():.1f}")
-st.subheader("Student Marks")
+
+col1, col2, col3 = st.columns(3)
+col1.metric("Students", len(df))
+col2.metric("Average Marks", f"{df['marks'].mean():.1f}")
+col3.metric("Average Study Hours", f"{df['study_hours'].mean():.1f}")
+
+st.subheader("🏆 Student Marks")
 st.bar_chart(df.set_index("name")["marks"])
-st.subheader("Study Hours VS Marks")
-st.scatter_chart(df,x="study_hours",y="marks",color="attendance")
+
+st.subheader("📚 Study Hours vs Marks")
+st.scatter_chart(
+    df, x="study_hours", y="marks", color="attendance"
+)
+
 st.subheader("📋 Student Dataset")
 st.dataframe(df, use_container_width=True)
 
