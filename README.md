@@ -13,7 +13,7 @@ It includes charts, summary statistics, and an interactive
 Linear Regression demonstration.
 
 ## Dashboard preview
-![Student Performance Analyzer Dashboard](screenshots/dashboard.png
+![Student Performance Analyzer Dashboard](dashboard.png)
 
 ## Features
 
