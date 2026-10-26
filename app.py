@@ -1,5 +1,7 @@
 import streamlit as st
-import pandas as pd from sklearn.linear_model import LinearRegression
+import pandas as pd 
+from sklearn.linear_model
+import LinearRegression
 st.set_page_config(page_title="Student Performance Analyzer",
                    page_icon="Heart",
                    layout="Wide"
