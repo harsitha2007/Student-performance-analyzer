@@ -1,4 +1,6 @@
 # 💜 BTS-Themed Student Performance Analyzer
+## 🚀 Live Demo
+[Try the Student Performance Analyzer](https://student-performance-analyzer-aohymea2opjnx2ksisu7rh.streamlit.app/)
 
 A beginner-friendly Data Science project using Python,
 Pandas, scikit-learn, and Streamlit.
