@@ -12,6 +12,9 @@ attendance, and marks using a fictional student dataset.
 It includes charts, summary statistics, and an interactive
 Linear Regression demonstration.
 
+## Dashboard preview
+![Student Performance Analyzer Dashboard](screenshots/dashboard.png
+
 ## Features
 
 - Student performance dataset
@@ -57,4 +60,4 @@ to make reliable real-world academic predictions.
 
 ## Author
 
-BSc Data Science Student
+Harsitha
